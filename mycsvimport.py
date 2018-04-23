@@ -11,9 +11,9 @@ class MyCSVImport:
     
     @classmethod
     def csvprop(self, filename, fieldname):
-        data = genfromtxt('file.csv', delimiter='=', dtype=None)
+        data = genfromtxt(filename, delimiter='=', dtype=None)
         #return (data)
-	    text = ''
+        text = ''
         for ii in range(0, len(data)):
             #print(data[ii][0])
             #text += data[ii][0] + str(data[ii][1])

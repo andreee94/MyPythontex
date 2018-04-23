@@ -1,0 +1,19 @@
+\ProvidesPackage{myPython}
+\usepackage[pyfuture=all,gobble=auto]{pythontex}
+
+
+% example of command fol
+\newcommand{\printfile}[1]
+{
+    \pyc{f = open(#1);}
+    \pyc{for l in f.readlines(): print(l);}
+    \pyc{f.close();}
+}
+
+%1 = filename 
+%2 = propname
+\newcommand{\csvprop}[2] 
+{
+	\pyc{from mycsvimport import MyCSVImport}
+	\pyc{print(MyCSVImport.csvprop(#1, #2));}
+}

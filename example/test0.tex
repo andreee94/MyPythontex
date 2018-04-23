@@ -1,0 +1,18 @@
+\documentclass{article}
+
+\usepackage[pyfuture=all,gobble=auto]{pythontex}
+\usepackage{myPython}
+
+\begin{document}
+
+	\printfile{"file.csv"}
+	\newpage
+	\csvprop{"file.csv"}{'res1'}
+	testo\\
+	\csvprop{"file.csv"}{'res2'}
+	testo\\
+	\csvprop{"file.csv"}{'res3'}
+    %testo\\ 
+    %nuova linea
+    
+\end{document}
